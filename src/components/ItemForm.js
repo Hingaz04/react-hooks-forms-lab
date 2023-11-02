@@ -2,6 +2,11 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 
 function ItemForm(props) {
+  const newItem = {
+    id: uuid(), // the `uuid` library can be used to generate a unique id
+    name: itemName,
+    category: itemCategory,
+  };
   return (
     <form className="NewItem">
       <label>
